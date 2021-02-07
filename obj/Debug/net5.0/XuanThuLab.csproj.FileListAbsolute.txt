@@ -566,3 +566,4 @@ D:\C#\MVC\XuanThuLab\bin\Debug\net5.0\libman.json
 D:\C#\MVC\XuanThuLab\bin\Debug\net5.0\package-lock.json
 D:\C#\MVC\XuanThuLab\bin\Debug\net5.0\elFinder.NetCore.dll
 D:\C#\MVC\XuanThuLab\obj\Debug\net5.0\Razor\Views\FileManager\Index.cshtml.g.cs
+D:\C#\MVC\XuanThuLab\obj\Debug\net5.0\Razor\Areas\Admin\Pages\Role\_Layout.cshtml.g.cs

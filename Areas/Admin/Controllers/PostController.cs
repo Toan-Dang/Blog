@@ -183,7 +183,7 @@ namespace XuanThuLab.Areas.Admin.Controllers {
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("PostId,Title,Description,Slug,Content")] PostBase post) {
+        public async Task<IActionResult> Edit(int id, [Bind("PostId,Title,Description,Slug,Content,Published")] PostBase post) {
             if(id != post.PostId) {
                 return NotFound();
             }
@@ -221,6 +221,7 @@ namespace XuanThuLab.Areas.Admin.Controllers {
                 postUpdate.Content = post.Content;
                 postUpdate.Slug = post.Slug;
                 postUpdate.DateUpdated = DateTime.Now;
+                postUpdate.Published = post.Published;
 
                 // Các danh mục không có trong selectedCategories
                 var listcateremove = postUpdate.PostCategories
